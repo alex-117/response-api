@@ -93,6 +93,6 @@ $(document).ready(() => {
         country = $('#country-input').val().trim();
         state = $('#state-input').val().trim();
         getZip(address, city, country, state);
-        // $('#form').find('input:text').val('');
+        $('#form').find('input:text').val('');
     });
 });
