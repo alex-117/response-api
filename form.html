@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Response API Challenge</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-toggleable-md navbar-dark bg-inverse">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="ion-navicon"></i></span>
+            </button>
+            <a class="navbar-brand" href="./index.html">Response API</a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./form.html">Form</a>
+                    </li>
+            </div>
+        </div>
+    </nav>
+    <section id="main">
+        <div class="container">
+            <h3 class="form-header">Enter Location</h3>
+            <form id="form">
+                <div class="form-group">
+                    <label for="address-input">Address</label>
+                    <input type="text" class="form-control" id="address-input" placeholder="Enter Address">
+                </div>
+                <div class="form-group">
+                    <label for="city-input">City</label>
+                    <input type="text" class="form-control" id="city-input" placeholder="Enter City">
+                </div>
+                <div class="form-group">
+                    <label for="state-input">State</label>
+                    <input type="text" class="form-control" id="state-input" placeholder="Enter State">
+                </div>
+                <div class="form-group">
+                    <label for="country-input">Country</label>
+                    <input type="text" class="form-control" id="country-input" placeholder="Enter Country">
+                </div>
+                <button id="form-submit" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+            <div class="search-wrapper">
+                <h3>Search Results</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Address</th>
+                            <th>Profit Grade</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <footer class="footer bg-inverse">
+        <div class="container">
+            <p>Alexander Ulfich 2018</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
